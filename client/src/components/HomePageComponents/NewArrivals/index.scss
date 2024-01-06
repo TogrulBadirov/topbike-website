@@ -1,0 +1,35 @@
+#new-arrivals{
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.custom-slider {
+    transition: transform 3s ease;
+  }
+  .slick-arrow{
+    background-color: white !important;
+    height: 50px;
+    width: 50px;
+    position: static; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    box-shadow: 0 1px 4px 2px #353944a0;
+    border-radius: 5px;
+    &::before{
+        color: #000 !important;
+        opacity: 1;
+        font-size: 28px;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+    }
+  }
+  .slick-next{
+    right: 0%;
+  }
+  .slick-prev{
+    left: 0px;
+    z-index: 5;
+  }

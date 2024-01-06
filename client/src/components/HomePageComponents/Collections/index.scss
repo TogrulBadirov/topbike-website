@@ -1,0 +1,106 @@
+#collection {
+    margin-top: 60px;
+
+    .collection-container {
+        display: flex;
+        justify-content: center;
+
+        .first-collection {
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover .explore-button{
+                opacity: 1;
+                visibility: visible;
+            }
+            &:hover .collection-content{
+                bottom: 58px;
+            }
+        }
+
+        .second-collection {
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover .explore-button{
+                opacity: 1;
+                visibility: visible;
+            }
+            &:hover .collection-content{
+                bottom: 58px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .collection-content {
+            position: absolute;
+            left: 42px;
+            bottom: 15px;
+            transition: .5s;
+            font-weight: 400;
+            .title {
+                font-size: 26px;
+                color: #fff;
+                margin-top: 0;
+                margin-bottom: 6px;
+                font-weight: 500;
+                line-height: 1.2;
+                text-transform: capitalize;
+            }
+
+            .sub-title {
+                color: #fff;
+                transition: .5s;
+                font-size: 12px;
+                letter-spacing: .4em;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                margin-top: 0;
+                margin: 0 0 15px;
+                font-weight: 400;
+            }
+
+            .explore-button {
+                position: relative;
+                display: inline-block;
+                padding-bottom: 5px;
+                color: #fff;
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s;
+                overflow: hidden;
+                cursor: pointer;
+                font-weight: 400;
+                line-height: 1.5;
+                font-size: 16px;
+
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    #collection {
+        margin-top: 50px;
+
+        .collection-container {
+            flex-wrap: wrap;
+
+            .first-collection {
+                max-width: 90%;
+            }
+
+            .second-collection {
+                margin-top: 16px;
+                max-width: 90%;
+            }
+        }
+    }
+}

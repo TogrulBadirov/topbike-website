@@ -1,0 +1,121 @@
+#header {
+    background-image: url("https://topbike-store-demo.myshopify.com/cdn/shop/files/slideshow_7.jpg?v=1613575715");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .header-content {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 13%;
+        z-index: 2;
+
+        .top-title {
+            font-size: 20px;
+            font-weight: 500;
+            padding-bottom: 15px;
+            letter-spacing: 4px;
+        }
+
+        .middle-title {
+            font-size: 72px;
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+
+        .bottom-title {
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 15px;
+            text-transform: unset;
+            line-height: 1.5;
+        }
+
+        .title-button {
+            color: #ffffff;
+            border-color: #ffffff;
+            margin-top: 30px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 10px 25px;
+            transition: .3s;
+            display: inline-block;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    #header {
+        .header-content {
+            .middle-title {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #header {
+        .header-content {
+            .middle-title {
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #header {
+        height: 85vh;
+
+        .header-content {
+            .middle-title {
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        height: 78vh;
+
+        .header-content {
+            .middle-title {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    #header {
+        .header-content {
+            top: 40%;
+            left: 50%;
+            width: 95%;
+            right: unset;
+            transform: translate(-50%, -50%);
+
+            .middle-title {
+                font-size: 30px;
+            }
+        }
+    }
+}
