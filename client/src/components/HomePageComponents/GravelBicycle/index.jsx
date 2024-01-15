@@ -2,6 +2,13 @@ import Product from "../../Product";
 import "./index.scss";
 
 const GravelBicycle = () => {
+  const item = {
+    image:"https://res.cloudinary.com/togrul/image/upload/v1705300095/ovovxfjyttlz1ipky22j.webp",
+    title: "RELEASE 2",
+    description:	"Bicycle",
+    price:3250,
+    discount:5
+}
   return (
     <section id="gravel-bicycle">
       <div className="image-container">
@@ -11,10 +18,10 @@ const GravelBicycle = () => {
         />
       </div>
       <div className="products-container">
-        <div className="div1"><Product/> </div>
-        <div className="div2"><Product/>  </div>
-        <div className="div3"> <Product/> </div>
-        <div className="div4"><Product/>  </div>
+        <div className="div1"><Product item={item}/> </div>
+        <div className="div2"><Product  item={item}/>  </div>
+        <div className="div3"> <Product  item={item}/> </div>
+        <div className="div4"><Product  item={item}/>  </div>
       </div>
     </section>
   );
