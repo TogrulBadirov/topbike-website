@@ -1,7 +1,10 @@
+import "./index.scss"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <div>© Copyright 2020 | TopBike By EngoTheme. Powered by Shopify.</div>
+    </footer>
   )
 }
 

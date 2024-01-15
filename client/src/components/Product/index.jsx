@@ -1,23 +1,30 @@
 import "./index.scss";
-
-const Product = () => {
+import { FaRegHeart } from "react-icons/fa6";
+import { BsSearch } from "react-icons/bs";
+import { MdOutlineShoppingBag } from "react-icons/md";
+const Product = ({item}) => {
   return (
     <div className="product">
       <div className="product-img">
       <img
-        src="https://topbike-store-demo.myshopify.com/cdn/shop/products/product3_088179d9-6d45-424c-9cba-5113d4cfd1ca.jpg?v=1608081612"
+        src={item && item.image}
         alt=""
       />
+      <div className="product-icons">
+        <button><FaRegHeart /></button>
+        <button><MdOutlineShoppingBag /></button>
+        <button><BsSearch /></button>
+      </div>
       </div>
       <div className="product-content">
         <h5 className="product-title">
-        DiamondBlack Haanjo 8C Carbon
+        {item && item.title}
         </h5>
         <p className="product-price">
-        $4,400.00
-        <span className="old-price">
+        ${item && item.price}
+        {/* <span className="old-price">
         $5,000.00
-        </span>
+        </span> */}
         </p>
       </div>
     </div>

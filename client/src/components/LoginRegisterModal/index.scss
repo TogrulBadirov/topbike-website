@@ -1,0 +1,29 @@
+#LoginRegisterModal{
+    position: fixed;
+    background-color: #000000a4;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .login-register-form{
+        padding: 50px;
+        background-color: #fff;
+        position: relative;
+        .close-icon{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 0;
+            right: 0;
+            margin: 35px 10px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: 150ms;
+            &:hover{
+                color: #ffab00;
+            }
+        }
+    }
+}

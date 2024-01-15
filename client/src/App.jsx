@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Profile from './pages/Profile';
+import Admin from './pages/Admin';
 
 function App() {
 
@@ -12,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
